@@ -5,179 +5,158 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Garamond', 'Georgia', serif;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
     transition: background-color 0.3s ease;
+    line-height: 1.8;
 }
 
-/* Liturgical Colors */
-body.ordinary { background: linear-gradient(135deg, #2d5016 0%, #4a7c28 100%); }
-body.advent { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
-body.christmas { background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%); color: #333; }
-body.lent { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
-body.easter { background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%); color: #333; }
-body.feast { background: linear-gradient(135deg, #b71c1c 0%, #d32f2f 100%); }
+/* Liturgical Colors - Muted and elegant */
+body.ordinary { background: #f0f5f1; color: #2c2c2c; }
+body.advent { background: #f0ebf5; color: #2c2c2c; }
+body.christmas { background: #fefefe; color: #2c2c2c; }
+body.lent { background: #f0ebf5; color: #2c2c2c; }
+body.easter { background: #fefefe; color: #2c2c2c; }
+body.feast { background: #fdf5f5; color: #2c2c2c; }
 
 .container {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 50px 40px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-body.christmas .container,
-body.easter .container {
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
+.mary-icon {
+    width: 25%;
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+    opacity: 0.7;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-body.christmas h1,
-body.easter h1 {
-    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #2c2c2c;
 }
 
 .greeting {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
     color: #555;
-    font-style: italic;
-}
-
-body.christmas .greeting,
-body.easter .greeting {
-    color: #ddd;
 }
 
 .mystery-name {
-    font-size: 2em;
+    text-align: center;
+    font-size: 1.8em;
     margin-bottom: 40px;
-    font-weight: bold;
-    color: #8b0000;
-}
-
-body.christmas .mystery-name,
-body.easter .mystery-name {
-    color: #ffd700;
+    font-weight: 400;
+    color: #2c2c2c;
+    font-style: italic;
 }
 
 .btn {
-    background: #8b0000;
+    display: block;
+    margin: 0 auto;
+    background: #2c2c2c;
     color: white;
     border: none;
-    padding: 18px 45px;
-    font-size: 1.2em;
-    border-radius: 50px;
+    padding: 12px 40px;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Georgia', serif;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Garamond', 'Georgia', serif;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
-    background: #660000;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: #1a1a1a;
+}
+
+.season-indicator {
+    text-align: center;
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 30px;
+    letter-spacing: 1px;
 }
 
 .prayer-page {
     display: none;
-    text-align: left;
 }
 
 .prayer-page h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #8b0000;
-    font-size: 2em;
-}
-
-body.christmas .prayer-page h2,
-body.easter .prayer-page h2 {
-    color: #ffd700;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .prayer-section {
-    margin-bottom: 30px;
-    line-height: 1.8;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.prayer-section:last-of-type {
+    border-bottom: none;
 }
 
 .prayer-section h3 {
-    color: #8b0000;
-    margin-bottom: 15px;
-    font-size: 1.4em;
-}
-
-body.christmas .prayer-section h3,
-body.easter .prayer-section h3 {
-    color: #ffd700;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #2c2c2c;
 }
 
 .prayer-section p {
-    margin-bottom: 12px;
-    color: #333;
+    margin-bottom: 10px;
+    color: #3c3c3c;
+    text-align: justify;
 }
 
-body.christmas .prayer-section p,
-body.easter .prayer-section p {
-    color: #ddd;
+.instruction {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+    margin-top: 8px;
 }
 
-.mystery-list {
-    background: rgba(139, 0, 0, 0.05);
+.mystery-meditation {
+    background: #fafafa;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    border-left: 3px solid #2c2c2c;
 }
 
-body.christmas .mystery-list,
-body.easter .mystery-list {
-    background: rgba(255, 215, 0, 0.1);
+.mystery-meditation h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2c2c2c;
 }
 
-.mystery-list ol {
-    margin-left: 20px;
-}
-
-.mystery-list li {
-    margin-bottom: 8px;
-    color: #333;
-}
-
-body.christmas .mystery-list li,
-body.easter .mystery-list li {
-    color: #ddd;
+.mystery-meditation p {
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.7;
 }
 
 .back-btn {
-    background: #555;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-.back-btn:hover {
-    background: #333;
-}
-
-.season-indicator {
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 20px;
-    font-style: italic;
-}
-
-body.christmas .season-indicator,
-body.easter .season-indicator {
-    color: #aaa;
+.divider {
+    text-align: center;
+    margin: 30px 0;
+    color: #ccc;
+    font-size: 1.2em;
 }

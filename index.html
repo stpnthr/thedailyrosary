@@ -9,14 +9,18 @@
 <body>
     <div class="container">
         <div id="homePage">
-            <h1>✟ Daily Rosary ✟</h1>
+            <img class="mary-icon" src="/images/mother-mary.png">
+            
+            <h1>DAILY ROSARY</h1>
             <p class="greeting" id="greeting"></p>
             <p class="mystery-name" id="mysteryName"></p>
-            <button class="btn" onclick="showPrayers()">Pray Today's Rosary</button>
+            <button class="btn" onclick="showPrayers()">BEGIN PRAYER</button>
             <p class="season-indicator" id="seasonIndicator"></p>
         </div>
 
         <div id="prayerPage" class="prayer-page">
+            <img class="mary-icon" src="/images/mother-mary.png">
+            
             <h2 id="prayerTitle"></h2>
             
             <div class="prayer-section">
@@ -35,9 +39,9 @@
             </div>
 
             <div class="prayer-section">
-                <h3>Three Hail Marys (for Faith, Hope, and Charity)</h3>
+                <h3>Three Hail Marys</h3>
                 <p>Hail Mary, full of grace, the Lord is with thee; blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</p>
-                <p><em>(Repeat three times)</em></p>
+                <p class="instruction">Pray three times for the virtues of Faith, Hope, and Charity.</p>
             </div>
 
             <div class="prayer-section">
@@ -45,27 +49,20 @@
                 <p>Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.</p>
             </div>
 
-            <div class="mystery-list" id="mysteriesList">
-            </div>
+            <div class="divider">✦ ✦ ✦</div>
 
-            <div class="prayer-section">
-                <h3>For Each Decade:</h3>
-                <p><strong>Announce the Mystery</strong> and meditate on it.</p>
-                <p><strong>Our Father</strong> (once)</p>
-                <p><strong>Hail Mary</strong> (ten times)</p>
-                <p><strong>Glory Be</strong> (once)</p>
-                <p><strong>Fatima Prayer:</strong> O my Jesus, forgive us our sins, save us from the fires of hell, and lead all souls to heaven, especially those in most need of thy mercy.</p>
-            </div>
+            <div id="mysteriesContent"></div>
+
+            <div class="divider">✦ ✦ ✦</div>
 
             <div class="prayer-section">
                 <h3>Hail Holy Queen</h3>
                 <p>Hail, Holy Queen, Mother of mercy, our life, our sweetness, and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, thine eyes of mercy toward us, and after this our exile show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.</p>
-                <p><strong>Pray for us, O holy Mother of God.</strong></p>
-                <p><strong>That we may be made worthy of the promises of Christ.</strong></p>
+                <p style="margin-top: 15px;"><em>Pray for us, O holy Mother of God, that we may be made worthy of the promises of Christ.</em></p>
             </div>
 
             <div class="prayer-section">
-                <h3>Final Prayer</h3>
+                <h3>Concluding Prayer</h3>
                 <p>O God, whose only-begotten Son, by his life, death and resurrection, has purchased for us the rewards of eternal life; grant, we beseech thee, that meditating upon these mysteries of the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen.</p>
             </div>
 
@@ -74,7 +71,7 @@
                 <p>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
             </div>
 
-            <button class="btn back-btn" onclick="showHome()">← Return to Home</button>
+            <button class="btn back-btn" onclick="showHome()">RETURN</button>
         </div>
     </div>
     <script src="/main.js"></script> 
